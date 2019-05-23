@@ -1,0 +1,19 @@
+body{
+    background-image: url("../images/mermaid.jpg");
+    }
+
+nav{
+background-color: #FFCAD4;
+font-size: 250%;
+font-family: 'Montaga', serif;
+}
+
+#Logo{
+    background-color: white; 
+    align-content: center;
+}
+
+#top{
+    background-color: white;
+    
+}
