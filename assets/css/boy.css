@@ -1,0 +1,15 @@
+body{
+    background-image: url("../images/Boy-Back.jpg");
+    }
+
+#backToTop{
+    background-color: #D8E2DC;
+    position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99;
+}
+#empty{
+    border-bottom: 1px solid #eee;
+    padding: 65px;
+}

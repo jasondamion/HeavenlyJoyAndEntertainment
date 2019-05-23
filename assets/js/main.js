@@ -1,9 +1,9 @@
 console.log("Javascript file is connected");
 
 
-var boy = document.getElementById("boyToHome");
+document.getElementById("platSub").addEventListener("click", function(){
+console.log("Plat button clicked.")
+});
 
-$(boy).on("click", function(){
-    alert("Button Clicked")
-    window.location.href("/boy");
-})
+
+
