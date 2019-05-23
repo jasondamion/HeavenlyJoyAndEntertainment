@@ -17,3 +17,19 @@ font-family: 'Montaga', serif;
     background-color: white;
     
 }
+#girl_Side{
+background-color: #FFE5D9;
+text-align: center;
+font-size: 290%;
+float: left;
+font-family: 'Montaga', serif;
+
+}
+#boy_Side{
+background-color: #D8E2DC;
+text-align: center;
+font-size: 290%;
+float: right;
+font-family: 'Montaga', serif;
+
+}
