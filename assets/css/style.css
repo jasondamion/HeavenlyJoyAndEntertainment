@@ -36,8 +36,8 @@ text-align: center;
 font-size: 290%;
 float: right;
 font-family: 'Montaga', serif;
-
 }
+
 .nav-link:hover {
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
   }
@@ -108,3 +108,21 @@ font-family: 'Montaga', serif;
       width: 100%;
     }
   }
+  #themeTitle{
+    text-align: center;
+   font-family: 'Montaga', serif;
+   }
+   .themeArea{
+     background-color: #d8e2dc
+   }
+   .carousel-caption{
+     color: black;
+   }
+   .addArea{
+     background-color: #D8E2DC;
+     font-family: 'Montaga', serif;
+     font: bold;
+   }
+  
+ 
+   

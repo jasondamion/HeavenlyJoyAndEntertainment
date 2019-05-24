@@ -1,9 +1,9 @@
 console.log("Javascript file is connected");
 
+$('.carousel').carousel();
 
-document.getElementById("platSub").addEventListener("click", function(){
-console.log("Plat button clicked.")
-});
+
+
 
 
 

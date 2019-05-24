@@ -13,3 +13,13 @@ body{
     border-bottom: 1px solid #eee;
     padding: 65px;
 }
+#checkAvailablity{
+    background-color: #D8E2DC;
+    position: fixed; /* Fixed/sticky position */
+  bottom: 60px; /* Place the button at the bottom of the page */
+  left: 5px; /* Place the button 30px from the right */
+  z-index: 99; 
+}
+.Calender{
+    display: none;
+}
