@@ -48,6 +48,7 @@ font-family: 'Montaga', serif;
   
   /* Create three columns of equal width */
   .columns {
+    
     float: left;
     width: 33.3%;
     padding: 8px;
@@ -113,16 +114,33 @@ font-family: 'Montaga', serif;
    font-family: 'Montaga', serif;
    }
    .themeArea{
+     display: none;
      background-color: #d8e2dc
    }
    .carousel-caption{
      color: black;
    }
    .addArea{
+     display: none;
      background-color: #D8E2DC;
      font-family: 'Montaga', serif;
      font: bold;
    }
-  
+  .summaryArea{
+    background-color: #D8E2DC;
+    font-family: 'Montaga', serif;
+  }
+  #cartTitle{
+    text-align: center;
+  }
+ #themeChosen{
+   text-align: center;
+   padding-top: 10%;
+ }
+ #packageChosen{
+   text-align: center;
+ }
+
+
  
    
