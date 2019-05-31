@@ -50,7 +50,7 @@ font-family: 'Montaga', serif;
   .columns {
     
     float: left;
-    width: 33.3%;
+    width: 20%;
     padding: 8px;
     background-color: #D8E2DC;
   }
@@ -129,8 +129,9 @@ font-family: 'Montaga', serif;
   .summaryArea{
     background-color: #D8E2DC;
     font-family: 'Montaga', serif;
+    display: none;
   }
-  #cartTitle{
+  #summaryTitle{
     text-align: center;
   }
  #themeChosen{
@@ -140,7 +141,25 @@ font-family: 'Montaga', serif;
  #packageChosen{
    text-align: center;
  }
-
-
- 
+form{
+  background-color: #D8E2DC;
+  font-family: 'Montaga', serif;
+  text-align: center;
+  display: none;
+}
+#addTitle{
+  text-align: center;
+}
+#packagePrice{
+  padding: 20%
+}
+#addOnPrice{
+  padding: 20%
+}
+#totalPrice{
+  padding: 20%
+}
+#deposit{
+ padding: 20%
+}
    

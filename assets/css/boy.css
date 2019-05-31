@@ -11,7 +11,19 @@ body{
 }
 #empty{
     border-bottom: 1px solid #eee;
-    padding: 65px;
+    padding: 359px;
+}
+#empty1{
+  border-bottom: 1px solid #eee;
+  padding: 249px;
+}
+#empty2{
+  border-bottom: 1px solid #eee;
+  padding: 95px;
+}
+#empty3{
+  border-bottom: 1px solid #eee;
+  padding: 62px;
 }
 #checkAvailablity{
     background-color: #D8E2DC;
