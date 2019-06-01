@@ -37,7 +37,8 @@ body{
 }
 .themeArea{
     display: none;
-    background-color: #FFE5D9
+    background-color: #FFE5D9;
+    text-align: center;
   }
   .addArea{
     display: none;

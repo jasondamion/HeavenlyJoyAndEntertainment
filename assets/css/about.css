@@ -1,0 +1,14 @@
+.container{
+    background-color: #E9EEEA;
+    font-family: 'Montaga', serif;
+text-align: center;
+border-radius: 10%
+}
+
+#innerContainer{
+    text-align: center;
+}
+
+/* #openLine{
+    text-align: center;
+} */
