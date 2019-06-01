@@ -47,13 +47,6 @@ font-family: 'Montaga', serif;
   }
   
   /* Create three columns of equal width */
-  .columns {
-    
-    float: left;
-    width: 20%;
-    padding: 8px;
-    background-color: #D8E2DC;
-  }
   
   /* Style the list */
   .price {
@@ -113,24 +106,11 @@ font-family: 'Montaga', serif;
     text-align: center;
    font-family: 'Montaga', serif;
    }
-   .themeArea{
-     display: none;
-     background-color: #d8e2dc
-   }
    .carousel-caption{
      color: black;
    }
-   .addArea{
-     display: none;
-     background-color: #D8E2DC;
-     font-family: 'Montaga', serif;
-     font: bold;
-   }
-  .summaryArea{
-    background-color: #D8E2DC;
-    font-family: 'Montaga', serif;
-    display: none;
-  }
+  
+ 
   #summaryTitle{
     text-align: center;
   }
@@ -141,12 +121,6 @@ font-family: 'Montaga', serif;
  #packageChosen{
    text-align: center;
  }
-form{
-  background-color: #D8E2DC;
-  font-family: 'Montaga', serif;
-  text-align: center;
-  display: none;
-}
 #addTitle{
   text-align: center;
 }

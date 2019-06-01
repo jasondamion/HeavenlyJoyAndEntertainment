@@ -1,0 +1,74 @@
+body{
+    background-image: url("../images/Girl-Back.jpg");
+    }
+
+#backToTop{
+    background-color: #FFE5D9;
+    position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99;
+}
+#empty{
+    border-bottom: 1px solid #eee;
+    padding: 359px;
+}
+#empty1{
+  border-bottom: 1px solid #eee;
+  padding: 249px;
+}
+#empty2{
+  border-bottom: 1px solid #eee;
+  padding: 95px;
+}
+#empty3{
+  border-bottom: 1px solid #eee;
+  padding: 62px;
+}
+#checkAvailablity{
+    background-color: #FFE5D9;
+    position: fixed; /* Fixed/sticky position */
+  bottom: 60px; /* Place the button at the bottom of the page */
+  left: 5px; /* Place the button 30px from the right */
+  z-index: 99; 
+}
+.Calender{
+    display: none;
+}
+.themeArea{
+    display: none;
+    background-color: #FFE5D9
+  }
+  .addArea{
+    display: none;
+    background-color: #FFE5D9;
+    font-family: 'Montaga', serif;
+    font: bold;
+  }
+  .summaryArea{
+    background-color: #FFE5D9;
+    font-family: 'Montaga', serif;
+    display: none;
+  }
+  form{
+    background-color: #FFE5D9;
+    font-family: 'Montaga', serif;
+    text-align: center;
+    display: none;
+  }
+  .columns {
+    
+    float: left;
+    width: 20%;
+    padding: 8px;
+    background-color: #FFE5D9;
+  }
+  .button {
+    background-color: #9D8189;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }

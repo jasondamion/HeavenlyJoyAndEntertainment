@@ -35,3 +35,40 @@ body{
 .Calender{
     display: none;
 }
+.themeArea{
+  display: none;
+  background-color: #d8e2dc
+}
+.addArea{
+  display: none;
+  background-color: #D8E2DC;
+  font-family: 'Montaga', serif;
+  font: bold;
+}
+.summaryArea{
+  background-color: #D8E2DC;
+  font-family: 'Montaga', serif;
+  display: none;
+}
+form{
+  background-color: #D8E2DC;
+  font-family: 'Montaga', serif;
+  text-align: center;
+  display: none;
+}
+.columns {
+    
+  float: left;
+  width: 20%;
+  padding: 8px;
+  background-color: #D8E2DC;
+}
+ .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
