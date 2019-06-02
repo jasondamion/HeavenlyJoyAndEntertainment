@@ -30,7 +30,13 @@ app.get("/gallery", function(req, res){
   cloudinary.v2.api.resources_by_tag('test',
     {max_results: 20},
         function (err, results) {
-               res.json(results.resources)  
+          if (results.length > 0){
+            res.json(results.resources)
+          }
+          else{
+            res.send("No Pics")
+          }
+                 
 
         }
 )  
