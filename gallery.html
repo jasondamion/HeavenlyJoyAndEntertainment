@@ -71,6 +71,7 @@ var photoPart;
 
 $.getJSON("https://backforheavenly.herokuapp.com/gallery", function(data){
     for (var i = 0; i < data.length; i++){
+        console.log(data[i].url);
         $(photoPart).append("<div class = 'row'>")
         for (var j = 0; j < 3; j++){
             $(photoPart).append("<div class = 'col-4'>");
