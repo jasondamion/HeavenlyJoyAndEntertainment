@@ -26,6 +26,10 @@ if (process.env.NODE_ENV === "production") {
 
 console.log("Server Connected")
 
+app.get("/", function(req, res){
+res.render("./start.html")
+})
+
 app.get("/gallery", function(req, res){
   cloudinary.v2.api.resources_by_tag('test',
     {max_results: 20},
