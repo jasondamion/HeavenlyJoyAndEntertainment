@@ -31,6 +31,9 @@ app.get("/", function (req, res) {
 app.get("/gallery", function (req, res) {
   cloudinary.v2.api.resources_by_tag("test",
     function (error, result) { 
+      if (error){
+        console.log(error)
+      }
     res.json(result);
     });
 })
