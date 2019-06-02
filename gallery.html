@@ -71,15 +71,24 @@
 var photoPart = $("#Photos_Stored");
 
 $.getJSON("https://backforheavenly.herokuapp.com/gallery", function(data){
-    for (var i = 0; i < (data.length / 3); i++){
+    for (var i = 0; i < data.length; i++){
         console.log(data[i].url);
-        $(photoPart).append("<div class = 'row'>")
-        for (var j = 0; j < 3; j++){
+
+        if (data[i] % 3 == 0){
+         $(photoPart).append("<div class = 'row'>")   
+        }
+        else{
+
+        }
             $(photoPart).append("<div class = 'col-4'>");
             $(photoPart).append("<img src = '" + data[i].url + "'width = '100vw height = '100vh'>");
             $(photoPart).append("</div>")
-        }
-        $(photoPart).append("</div>")
+
+            if (data[i] % 3 == 0){
+                $(photoPart).append("</div>")
+            }
+        
+        
      
     }
 })
