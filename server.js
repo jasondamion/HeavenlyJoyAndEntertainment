@@ -23,7 +23,7 @@ console.log("Server working")
 console.log("Server Connected")
 
 app.get("/", function(req, res){
-res.render("./start.html")
+  res.send("Working");
 })
 
 app.get("/gallery", function(req, res){
