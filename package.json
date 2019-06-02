@@ -14,6 +14,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "postinstall": "cd app",
     "start": "node server.js",
     "heroku-postbuild": "npm run build"
   },
