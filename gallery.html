@@ -52,7 +52,7 @@
 
 <br>
 
- <div class="container">
+ <div class="container" id = "Photos_Stored">
 
         <div class="row">
 
@@ -62,12 +62,25 @@
 
         </div>
 
-        <div class = "row" id = "Photos Stored">
-            
-        </div>
 
     </div>
 
 </body>
+<script>
+var photoPart;
+
+$.getJSON("https://backforheavenly.herokuapp.com/gallery", function(data){
+    for (var i = 0; i < data.length; i++){
+        $(photoPart).append("<div class = 'row'>")
+        for (var j = 0; j < 3; j++){
+            $(photoPart).append("<div class = 'col-4'>");
+            $(photoPart).append("<img src = '" + data[i].url + "'>");
+            $(photoPart).append("</div>")
+        }
+        $(photoPart).append("</div>")
+     
+    }
+})
+</script>
 
 </html>
