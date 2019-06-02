@@ -67,7 +67,7 @@
 
 </body>
 <script>
-var photoPart;
+var photoPart = $("#Photos_Stored");
 
 $.getJSON("https://backforheavenly.herokuapp.com/gallery", function(data){
     for (var i = 0; i < data.length; i++){
