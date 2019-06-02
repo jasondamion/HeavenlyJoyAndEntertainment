@@ -29,7 +29,7 @@ app.get("/", function (req, res) {
 
 
 app.get("/gallery", function (req, res) {
-  res.setHeader('Access-Control-Allow-Origin', 'file:///C:/Users/jason/Desktop/HeavenlyJoyAndEntertainment/gallery.html');
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080');
   cloudinary.v2.api.resources_by_tag("test",
     function (error, result) { 
       if (error){
