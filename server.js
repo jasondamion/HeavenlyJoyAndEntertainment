@@ -34,7 +34,7 @@ app.get("/gallery", function (req, res) {
       if (error){
         console.log(error)
       }
-    res.json(result);
+    res.json(result.resources);
     });
 })
 
