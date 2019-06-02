@@ -80,8 +80,8 @@ $.getJSON("https://backforheavenly.herokuapp.com/gallery", function(data){
         }
         else{
        $(photoPart).append("<div class = 'col-3'>");
-            $(photoPart).append("<img src = '" + data[i].url + "'width = '200vw height = '200vh'>");
-            $(photoPart).append("</div>")
+            $(photoPart).append("<img src = '" + data[i].url + "'width = '200vw height = '200vh'></div>");
+            
         }
         if (data[i] % 3 == 0){
                 $(photoPart).append("</div>")
