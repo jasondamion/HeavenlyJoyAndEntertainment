@@ -75,7 +75,7 @@ var photoPart = $("#Photos_Stored");
 $.getJSON("https://backforheavenly.herokuapp.com/gallery", function(data){
     for (var i = 0; i < data.length; i++){
         console.log(data[i].url);
-            $(photoPart).append("<img id = 'photos' src = '" + data[i].url + "'width = '250vw' height = '200vh' style='padding: 2%' >");
+            $(photoPart).append("<img id = 'photos' src = '" + data[i].url + "'width = '250vw' height = '200vh' style='padding: 4%' >");
             
         }
 })
