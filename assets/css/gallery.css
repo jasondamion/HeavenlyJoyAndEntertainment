@@ -3,8 +3,8 @@
     background-color: #FFE5D9;
 }
 #photos{
-    transition: transform .2s;
+    transition: ease-in;
 }
 #photos:hover{
-    transform: scale3d(150);
+    transform: scale3d(1.5);
 }
