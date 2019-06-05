@@ -11,5 +11,7 @@
     transform: scale(3.0);
     right: 50%;
     bottom:50%;
+    margin-top: -50px;
+  margin-left: -100px;
     
 }
