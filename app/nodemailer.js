@@ -5,21 +5,21 @@ console.log("Connected");
   var mailer = {
     reserve(gender1, guardianName1, childName1, phone1, address1, email1, childBday1, event1, age1, package1, theme1, packagePrice1, addOnPrice1, totalPrice1, deposit1) {
 
-      var gender = "<br><h1>Gender: " + gender1 + "</h1><br>";
-      var guardianName = "<h1>Guardian Name: " + guardianName1 + "</h1><br>";
-      var childName = "<h1>Child Name: " + childName1 + "</h1><br>";
-      var phone = "<h1>Phone: " + phone1 + "</h1><br>";
-      var address = "<h1>Address: " + address1 + "</h1><br>";
-      var email = "<h1>Email: " + email1 + "</h1><br>";
-      var childBday = "<h1>Child Birthday: " + childBday1 + "</h1><br>";
-      var event = "<h1>Event Date: " + event1 + "</h1><br>";
-      var age = "<h1>Age: " + age1 + "</h1><br>";
-      var package = "<h1>Package Chosen: " + package1 + "</h1><br>";
-      var theme = "<h1>Theme: " + theme1 + "</h1><br>";
-      var packagePrice = "<h1>Package Price: " + "$" + packagePrice1 + "</h1><br>";
-      var addOnPrice = "<h1>Add-On Price: " + "$" + addOnPrice1 + "</h1><br>";
-      var totalPrice = "<h1>Total Price: " + "$" + totalPrice1 + "</h1><br>";
-      var deposit = "<h1>Deposit to be made: " + "$" + deposit1 + "</h1><br>";
+      var gender = "<h1>Gender: " + gender1 + "</h1>";
+      var guardianName = "<h1>Guardian Name: " + guardianName1 + "</h1>";
+      var childName = "<h1>Child Name: " + childName1 + "</h1>";
+      var phone = "<h1>Phone: " + phone1 + "</h1>";
+      var address = "<h1>Address: " + address1 + "</h1>";
+      var email = "<h1>Email: " + email1 + "</h1>";
+      var childBday = "<h1>Child Birthday: " + childBday1 + "</h1>";
+      var event = "<h1>Event Date: " + event1 + "</h1>";
+      var age = "<h1>Age: " + age1 + "</h1>";
+      var package = "<h1>Package Chosen: " + package1 + "</h1>";
+      var theme = "<h1>Theme: " + theme1 + "</h1>";
+      var packagePrice = "<h1>Package Price: " + "$" + packagePrice1 + "</h1>";
+      var addOnPrice = "<h1>Add-On Price: " + "$" + addOnPrice1 + "</h1>";
+      var totalPrice = "<h1>Total Price: " + "$" + totalPrice1 + "</h1>";
+      var deposit = "<h1>Deposit to be made: " + "$" + deposit1 + "</h1>";
       var fullEmail = gender + guardianName + childName + phone + address + email + childBday + event + age + package + theme + packagePrice + addOnPrice + totalPrice + deposit;
 
       // async..await is not allowed in global scope, must use a wrapper
