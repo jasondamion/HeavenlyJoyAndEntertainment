@@ -443,14 +443,20 @@
                 <label for="inputAddress">Address</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
             </div>
-            <div class="form-group">
+            <div class = "form-row">
+            <div class="form-group col-md-6">
                 <label for="inputPhone">Phone Number</label>
                 <input type="number" class="form-control" id="inputPhone" placeholder="1-234-567-8910" required>
+            </div>
+            <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="text" class="form-control" id="inputEmail" placeholder="Johnsmith@email.com" required>
+             </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity" required>
+                    <input type="text" class="form-control" id="inputCity" required placeholder = "NYC">
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputState">State</label>
@@ -511,25 +517,25 @@
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputZip">Zip</label>
-                    <input type="number" class="form-control" id="inputZip" required>
+                    <input type="number" class="form-control" id="inputZip" required placeholder = "10039">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-5">
                     <label for="childBdayDate">Child Birthday</label>
-                    <input type="date" class="form-control" id="childBdayDate" placeholder="Email">
+                    <input type="date" class="form-control" id="childBdayDate" placeholder="Child Bday">
                 </div>
                 <div class="form-group col-md-5">
                     <label for="eventDate">Event Date</label>
-                    <input type="date" class="form-control" id="eventDate" placeholder="Password">
+                    <input type="date" class="form-control" id="eventDate" placeholder="Event Date">
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputAge">Birthday Age</label>
-                    <input type="number" class="form-control" id="inputAge" placeholder="Password">
+                    <input type="number" class="form-control" id="inputAge" placeholder="Bday Age">
                 </div>
             </div>
-            <button type="button" id="formSub" class="btn btn-primary">Sign in</button>
+            <button type="button" id="formSub" class="btn btn-primary">Continue</button>
             <br>
         </form>
         <br>
@@ -588,18 +594,18 @@
             </div>
 
             <div class="row">
-                <div class="col-4">
-
-                </div>
+                <div class="col-2"></div>
                 <div class="col-2">
                     <h3>Age: </h1>
                 </div>
                 <div class="col-2">
                     <h3 id="age">Age </h1>
                 </div>
-
-                <div class="col-4">
-
+                <div class="col-2">
+                    <h3>Email: </h3>
+                </div>
+                <div class="col-2">
+                    <h3 id = "email">Email </h3>
                 </div>
 
             </div>
@@ -671,6 +677,14 @@
                     <h5 id="deposit" style="text-align: right">Deposit Amount</h5>
                 </div>
             </div>
+            <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <button type="button" id="emailSub" class="btn btn-primary" style = "text-align: center">SIGN ME UP!</button>
+                    </div>
+            </div>
+           
+
             <br>
         </div>
 
@@ -794,7 +808,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -910,7 +925,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -1026,7 +1042,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -1142,7 +1159,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -1258,7 +1276,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -1374,7 +1393,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -1490,7 +1510,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -1606,7 +1627,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -1722,7 +1744,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -1838,7 +1861,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                           var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -1954,7 +1978,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -2070,7 +2095,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -2186,7 +2212,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -2302,7 +2329,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -2433,7 +2461,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -2549,7 +2578,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -2665,7 +2695,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -2781,7 +2812,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -2897,7 +2929,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -3013,7 +3046,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -3129,7 +3163,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -3245,7 +3280,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -3361,7 +3397,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -3477,7 +3514,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -3593,7 +3631,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -3709,7 +3748,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -3825,7 +3865,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -3941,7 +3982,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -4072,7 +4114,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -4188,7 +4231,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -4304,7 +4348,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -4420,7 +4465,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -4536,7 +4582,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -4652,7 +4699,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -4768,7 +4816,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -4885,6 +4934,8 @@
                                             deposit = totalPrice * .20;
 
 
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -5000,7 +5051,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+     var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -5116,7 +5168,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -5232,7 +5285,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -5348,7 +5402,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -5464,7 +5519,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -5580,7 +5636,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -5711,7 +5768,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -5827,7 +5885,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -5943,7 +6002,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -6059,7 +6119,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -6175,7 +6236,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -6291,7 +6353,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -6407,7 +6470,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -6523,7 +6587,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -6639,7 +6704,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -6755,7 +6821,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -6871,7 +6938,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -6987,6 +7055,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
 
                                             //Assigning variables to page
@@ -7103,7 +7173,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+     var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -7219,7 +7290,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -7350,7 +7422,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -7467,7 +7540,8 @@
                                             deposit = totalPrice * .20;
 
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
                                             $("#childName").text(childName);
@@ -7582,7 +7656,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -7698,7 +7773,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -7814,7 +7890,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -7930,7 +8007,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -8046,7 +8124,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -8161,7 +8240,8 @@
                                             var age = $("#inputAge").val();
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
 
                                             //Assigning variables to page
@@ -8278,7 +8358,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -8394,7 +8475,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -8510,7 +8592,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -8626,7 +8709,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -8742,7 +8826,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
@@ -8858,7 +8943,8 @@
                                             totalPrice = packagePrice + addOnPrice;
                                             deposit = totalPrice * .20;
 
-
+                                            var email = $("#inputEmail").val();
+                                            $("#email").text(email);
 
                                             //Assigning variables to page
                                             $("#guardianName").text(guardianName);
