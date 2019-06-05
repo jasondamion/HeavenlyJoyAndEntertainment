@@ -13,88 +13,73 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montaga&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montaga&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/gallery.css">
 
 </head>
 
 <body>
+   
+   
 
+         <div class=  "row">
+             
+             <div class = "col nav justify-content-center" id = "top">
+                <a href = "index.html"><img id = "Logo" src = "./assets/images/logotra.png" width="600vw" height = "140vh"></a> 
+             </div>
+             
+         </div>
 
+    
+       
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active text-secondary" href="about_me.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="party.html">Build My Party</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">Contact Us</a>
+                </li>
+            </ul>
+            
+        </nav>
 
-    <div class="row">
+<br>
 
-        <div class="col nav justify-content-center" id="top">
-            <a href="index.html"><img id="Logo" src="./assets/images/logotra.png" width="600vw" height="140vh"></a>
-        </div>
-
-    </div>
-
-
-
-    <nav>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active text-secondary" href="about_me.html">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-secondary" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-secondary" href="party.html">Build My Party</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-secondary" href="#">Contact Us</a>
-            </li>
-        </ul>
-
-    </nav>
-
-    <br>
-
-    <div class="container">
+ <div class="container">
 
         <div class="row">
 
             <div class="col-12">
-                <h1>Photos</h1>
+              <h1>Photos</h1>
             </div>
 
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
-
-                <div id="mdb-lightbox-ui"></div>
-
-                    <div class="mdb-lightbox no-margin" id="Photos_Stored">
-
-                    </div>
-
-                </div>
-            </div>
+        <div id = "Photos_Stored"></div>
+        
 
 
-        </div>
+    </div>
 
 </body>
 <script>
-    var photoPart = $("#Photos_Stored");
-    
-    // MDB Lightbox Init
-$(function () {
-$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-});
+var photoPart = $("#Photos_Stored");
 
-    $.getJSON("https://backforheavenly.herokuapp.com/gallery", function (data) {
-        for (var i = 0; i < data.length; i++) {
-            console.log(data[i].url);
-              
-            $(photoPart).append("<figure class='col-md-4'>"+"<a href='" + data[i].url +"' data-size = '1600x1067'><img alt = 'picture' src = '" + data[i].url + "' class = 'img-fluid'</a></figure>")
-
+$.getJSON("https://backforheavenly.herokuapp.com/gallery", function(data){
+    for (var i = 0; i < data.length; i++){
+        console.log(data[i].url);
+            $(photoPart).append("<img id = 'photos' class = 'thumbnail' src = '" + data[i].url + "'width = '250vw' height = '200vh' style='padding: 1%' >");
+            
         }
-    })
+})
 </script>
 
 </html>

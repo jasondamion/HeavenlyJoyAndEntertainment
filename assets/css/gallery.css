@@ -3,7 +3,7 @@
     background-color: #FFE5D9;
 }
 .thumbnail:hover {
-    position:relative;
+    position:absolute;
     top:-25px;
     left:-35px;
     width:500px;
