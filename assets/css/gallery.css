@@ -11,5 +11,5 @@
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
-     transform: scale(3.0);
+    transform: scale3d(3.0);
 }
