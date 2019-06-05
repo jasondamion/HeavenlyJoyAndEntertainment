@@ -729,6 +729,7 @@
     var deposit = 0;
     var add_on_count = 0;
 
+    
     //When the Glitter Package is clicked, Switches with Themes
     $("#glitSub").on("click", function () { //Change Per Package
         package = "Glitter Package"; //Change Per Package
@@ -823,10 +824,19 @@
                                             $("#addOnPrice").text("$" + addOnPrice);
                                             $("#totalPrice").text("$" + totalPrice);
                                             $("#deposit").text("$" + deposit);
+                                            // reservation/Male/Muriel Page/Jason Nelson/3477929311/377 New Milford Ave/jasonnelson11@gmail.com/02081999/06032019/21/Silver Package/Outer Space Theme/250/250/500/125
 
+                                          
+                                           
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
+
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
 
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
@@ -945,7 +955,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -1062,7 +1076,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -1179,7 +1197,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -1296,7 +1318,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -1413,7 +1439,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -1530,7 +1560,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -1647,7 +1681,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -1764,7 +1802,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -1881,7 +1923,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -1998,7 +2044,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -2115,7 +2165,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -2232,7 +2286,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -2349,7 +2407,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -2481,7 +2543,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -2598,7 +2664,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -2715,7 +2785,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -2832,7 +2906,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -2949,7 +3027,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -3066,7 +3148,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -3183,7 +3269,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -3300,7 +3390,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -3417,7 +3511,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -3535,7 +3633,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -3652,7 +3754,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -3769,7 +3875,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -3888,7 +3998,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -4005,7 +4119,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -4137,7 +4255,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -4254,7 +4376,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -4371,7 +4497,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -4488,7 +4618,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -4605,7 +4739,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -4722,7 +4860,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -4839,7 +4981,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -4956,7 +5102,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -5073,7 +5223,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -5190,7 +5344,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -5307,7 +5465,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -5424,7 +5586,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -5541,7 +5707,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -5658,7 +5828,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -5790,7 +5964,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -5907,7 +6085,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -6024,7 +6206,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -6141,7 +6327,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -6258,7 +6448,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -6375,7 +6569,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -6492,7 +6690,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -6609,7 +6811,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -6726,7 +6932,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -6843,7 +7053,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -6960,7 +7174,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -7077,7 +7295,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -7194,7 +7416,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -7311,7 +7537,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -7443,7 +7673,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -7560,7 +7794,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -7677,7 +7915,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -7794,7 +8036,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -7911,7 +8157,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -8028,7 +8278,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -8145,7 +8399,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -8262,7 +8520,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -8379,7 +8641,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -8496,7 +8762,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -8613,7 +8883,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -8730,7 +9004,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -8847,7 +9125,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
@@ -8965,7 +9247,11 @@
 
                                             $("form").fadeOut("slow", function () {
                                                 $(".summaryArea").fadeIn("slow", function () {
-
+                                                    $("#emailSub").on("click", function(){
+                                                  $.getJSON( "https://backforheavenly.herokuapp.com/reservation/" + gender + "/" + guardianName + "/" + childName + "/" + phoneNumber + "/" + address + "/" + email + "/" + childBday + "/" + eventDate + "/" + age + "/" + package + "/" + theme + "/" + packagePrice + "/" + addOnPrice + "/" + totalPrice + "/" + deposit , function( data ) {
+                                            console.log("Email Sent");
+                                                     });  
+                                                    })
                                                     if (add_ons.length > 0 && repeat == false) {
                                                         repeat = true;
                                                         $(".AddOnItems").append("<h1 id='addTitle'>Add Ons</h1>")
