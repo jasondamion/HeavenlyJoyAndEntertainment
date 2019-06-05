@@ -5,6 +5,7 @@ console.log("Connected");
   var mailer = {
     reserve(gender1, guardianName1, childName1, phone1, address1, email1, childBday1, event1, age1, package1, theme1, packagePrice1, addOnPrice1, totalPrice1, deposit1) {
 
+      
       var gender = "<h1>Gender: " + gender1 + "</h1>";
       var guardianName = "<h1>Guardian Name: " + guardianName1 + "</h1>";
       var childName = "<h1>Child Name: " + childName1 + "</h1>";

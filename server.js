@@ -53,7 +53,7 @@ res.send("Email Sent")
 
 app.get("/gallery", function (req, res) {
   res.setHeader('Access-Control-Allow-Origin', 'https://jasondamion.github.io');
-  cloudinary.v2.api.resources_by_tag("test",
+  cloudinary.v2.api.resources_by_tag("heaven",
     function (error, result) { 
       if (error){
         console.log(error)

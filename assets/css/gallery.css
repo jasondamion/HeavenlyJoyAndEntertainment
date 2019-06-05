@@ -2,9 +2,12 @@
     text-align: center;
     background-color: #FFE5D9;
 }
-#photos{
-    transition: ease-in;
-}
-#photos:hover{
-    transform: scale3d(1.5);
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
 }
