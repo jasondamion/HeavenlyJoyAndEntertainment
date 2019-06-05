@@ -3,11 +3,11 @@
     background-color: #FFE5D9;
 }
 .thumbnail:hover {
-    position:absolute;
-    top:-25px;
+    position:relative;
+    /* top:-25px;
     left:-35px;
-    width:500px;
-    height:auto;
+    width:500px; */
+    /* height:auto; */
     display:block;
     z-index:999;
 }
