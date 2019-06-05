@@ -31,6 +31,7 @@ app.get("/", function (req, res) {
 })
 
 app.get("/contact/:Name/:phone/:email/:message", function(req,res){
+  res.setHeader('Access-Control-Allow-Origin', 'https://jasondamion.github.io');
   mailer.contact(req.params.Name,req.params.phone,req.params.email,req.params.message)
   res.send("Contact Email Sent")
 })
