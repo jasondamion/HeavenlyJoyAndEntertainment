@@ -43,7 +43,7 @@ console.log("Connected");
         // });
         const mailOptions = {
           from: 'jasonnelson11@gmail.com', // sender address
-          to: 'adrian@heavenlyjoyevents.com', // list of receivers
+          to: 'jasonfswd@gmail.com', // list of receivers
           subject: 'Reservation', // Subject line
           html: fullEmail// plain text body
         };
