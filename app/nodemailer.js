@@ -24,27 +24,20 @@ console.log("Connected");
 
       // async..await is not allowed in global scope, must use a wrapper
       async function main() {
-        // create reusable transporter object using gmail
+        // create reusable transporter object using STMP
         let transporter = nodemailer.createTransport({
-          service: "gmail",
+          host: "smtp.ionos.com",
+          port: 587,
           auth: {
-            user: "jasonnelson11@gmail.com",
-            pass: 'sharainelson'
+            user: "support@heavenlyjoyevents.com",
+            pass: "SummerJOJO19#"
           }
         });
 
-        // send mail with defined transport object
-        // let info = await transporter.sendMail({
-        //   from: '"Heavenly Joy and Entertainment" <jasonnelson11@gmail.com>', // sender address
-        //   to: "jasonfswd@gmail.com", // list of receivers
-        //   subject: "Reservation", // Subject line
-        //   text: "Reservation: ", // plain text body
-        //   html: fullEmail // html body
-        // });
         const mailOptions = {
-          from: 'jasonnelson11@gmail.com', // sender address
-          to: 'jasonfswd@gmail.com', // list of receivers
-          subject: 'Reservation', // Subject line
+          from: 'support@heavenlyjoyevents.com', // sender address
+          to: 'support@heavenlyjoyevents.com', // list of receivers
+          subject: 'Thank You For Reserving', // Subject line
           html: fullEmail// plain text body
         };
 
