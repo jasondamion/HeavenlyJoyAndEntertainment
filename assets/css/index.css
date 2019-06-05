@@ -1,0 +1,55 @@
+#image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+   border:5px solid white;
+  z-index: 90
+}
+#image2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+   border:5px solid white;
+  z-index: 90
+}
+#caption{
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  background-color: azure;
+  position: relative;
+z-index: 100;
+}
+#face{
+  background-color: white;
+  border-radius: 15% 15% 0% 0%;
+  font-family: 'Permanent Marker', cursive;
+  color: lightcoral;
+
+}
+#face2{
+  background-color: white;
+  border-radius: 0% 0% 10% 10%;
+  color: aqua;
+  font-family: 'Permanent Marker', cursive;
+
+}
+.agenda{
+  background-color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+#title{
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+#subTitle{
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  color: coral;
+}
+#text{
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  color: aquamarine;
+}

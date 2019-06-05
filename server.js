@@ -30,6 +30,11 @@ app.get("/", function (req, res) {
   res.send("Working");
 })
 
+app.get("/contact/:Name/:phone/:email/:message", function(req,res){
+  mailer.contact(req.params.Name,req.params.phone,req.params.email,req.params.message)
+  res.send("Contact Email Sent")
+})
+
 app.get("/Reservation/:gender/:guardianName/:childName/:phone/:address/:email/:childBday/:event/:age/:package/:theme/:packagePrice/:addOnPrice/:totalPrice/:deposit", function (req, res) {
   res.setHeader('Access-Control-Allow-Origin', 'https://jasondamion.github.io');
   gender = req.params.gender
@@ -48,7 +53,7 @@ app.get("/Reservation/:gender/:guardianName/:childName/:phone/:address/:email/:c
   totalPrice = req.params.totalPrice
   deposit = req.params.deposit
   mailer.reserve(gender, guardianName, childName, phone, address, email, childBday, event, age, package1, theme, packagePrice, addOnPrice, totalPrice, deposit)
-res.send("Email Sent")
+res.send("Reservation Email Sent")
 })
 
 app.get("/gallery", function (req, res) {

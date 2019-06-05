@@ -26,18 +26,33 @@ console.log("Connected");
       // async..await is not allowed in global scope, must use a wrapper
       async function main() {
         // create reusable transporter object using STMP
+        // let transporter = nodemailer.createTransport({
+        //   host: "smtp.ionos.com",
+        //   port: 587,
+        //   auth: {
+        //     user: "support@heavenlyjoyevents.com",
+        //     pass: "SummerJOJO19#"
+        //   }
+        // });
+
         let transporter = nodemailer.createTransport({
-          host: "smtp.ionos.com",
-          port: 587,
+          service: "gmail",
           auth: {
-            user: "support@heavenlyjoyevents.com",
-            pass: "SummerJOJO19#"
+            user: "jasonnelson11@gmail.com",
+            pass: process.env.PASSWORD
           }
         });
 
+        // const mailOptions = {
+        //   from: 'support@heavenlyjoyevents.com', // sender address
+        //   to: 'support@heavenlyjoyevents.com', // list of receivers
+        //   subject: 'Thank You For Reserving', // Subject line
+        //   html: fullEmail// plain text body
+        // };
+
         const mailOptions = {
-          from: 'support@heavenlyjoyevents.com', // sender address
-          to: 'support@heavenlyjoyevents.com', // list of receivers
+          from: 'jasonnelson11@gmail.com', // sender address
+          to: 'jasonfswd@gmail.com', // list of receivers
           subject: 'Thank You For Reserving', // Subject line
           html: fullEmail// plain text body
         };
@@ -52,6 +67,60 @@ console.log("Connected");
       }
 
       main().catch(console.error);
+    },
+    contact(Name1,Phone1,Email1,Message1){
+      var name = "<h1>Name: " + Name1 + "</h1>";
+      var phone = "<h1>Phone Number: " + Phone1 + "</h1>";
+      var email = "<h1>Email: " + Email1 + "</h1>";
+      var message = "<h1>Message: " + Message1 + "</h1>";
+      var fullEmail = name + phone + email + message;
+
+      async function main() {
+        // create reusable transporter object using STMP
+        // let transporter = nodemailer.createTransport({
+        //   host: "smtp.ionos.com",
+        //   port: 587,
+        //   auth: {
+        //     user: "support@heavenlyjoyevents.com",
+        //     pass: "Put Later"
+        //   }
+        // });
+
+        let transporter = nodemailer.createTransport({
+          service: "gmail",
+          auth: {
+            user: "jasonnelson11@gmail.com",
+            pass: process.env.PASSWORD
+          }
+        });
+
+        // const mailOptions = {
+        //   from: 'support@heavenlyjoyevents.com', // sender address
+        //   to: 'support@heavenlyjoyevents.com', // list of receivers
+        //   subject: 'Thank You For Reserving', // Subject line
+        //   html: fullEmail// plain text body
+        // };
+
+        const mailOptions = {
+          from: 'jasonnelson11@gmail.com', // sender address
+          to: 'jasonfswd@gmail.com', // list of receivers
+          subject: 'Contact', // Subject line
+          html: fullEmail// plain text body
+        };
+
+        transporter.sendMail(mailOptions, function (err, info) {
+          if(err)
+            console.log(err)
+          else
+            console.log("Email Send: "+ info.response);
+       });
+
+      }
+
+      main().catch(console.error);
+
+
+
     }
   }
 
